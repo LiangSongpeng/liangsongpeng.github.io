@@ -55,9 +55,8 @@ M|1000
 
 代码如下：
 
-```C
-class Solution {
-public:
+```Cpp
+
     int romanToInt(string s) {      
         unordered_map<string, int> m = {{"I", 1}, {"IV", 3}, {"IX", 8}, {"V", 5}, {"X", 10}, {"XL", 30}, {"XC", 80}, {"L", 50}, {"C", 100}, {"CD", 300}, {"CM", 800}, {"D", 500}, {"M", 1000}};
         int r = m[s.substr(0, 1)];
@@ -68,8 +67,6 @@ public:
             r += m[two] ? m[two] : m[one];
         }
         return r;
-    }
-};
 ```
 
 对于这种问题，应该及时想到使用无序表，如哈希表等类型容器。可以将键与值一一对应，查找效率极高！
