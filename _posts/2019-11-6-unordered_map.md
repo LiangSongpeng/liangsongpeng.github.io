@@ -55,7 +55,7 @@ M|1000
 
 代码如下：
 
-```Cpp
+    ```C
     int romanToInt(string s) 
     {      
         unordered_map<string, int> m = {\
@@ -70,6 +70,6 @@ M|1000
         }
         return r;
     }
-```
+    ```
 
 对于这种问题，应该及时想到使用无序表，如哈希表等类型容器。可以将键与值一一对应，查找效率极高！
