@@ -11,8 +11,10 @@ type: page
 
 ## 关于我
 
-* 即将成为程序员的学生
+* 一名即将成为程序员的硕士研究生
+* HIT-1系
 
 ## 联系我
 
 * email：liangsongpeng@outlook.com
+* Github：LiangSongpeng
