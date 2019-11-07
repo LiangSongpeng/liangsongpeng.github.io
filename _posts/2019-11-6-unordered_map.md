@@ -10,7 +10,7 @@ title:  "关联容器的特性与应用场景"
 
 std::unorederd_map 类模板：
 
-```
+``` c++
 template < class Key,                                    // unordered_map::key_type
            class T,                                      // unordered_map::mapped_type
            class Hash = hash<Key>,                       // unordered_map::hasher
@@ -76,7 +76,7 @@ M|1000
 
 在此问题中，可使用无序表。代码如下：
 
-```
+``` c++
 int romanToInt(string s) 
 {      
     unordered_map<string, int> m = { {"I", 1}, {"IV", 3}, {"IX", 8}, {"V", 5}, {"X", 10}, {"XL", 30}, {"XC", 80}, {"L", 50}, {"C", 100}, {"CD", 300}, {"CM", 800}, {"D", 500}, {"M", 1000} };
