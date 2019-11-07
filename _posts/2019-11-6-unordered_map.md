@@ -18,7 +18,7 @@ title:  "unordered_map 无序表的特性与应用场景"
 <br/>序列容器有：链表、数组、栈、队列等等（元素一个一个往里放，没关系）。
 
 类型成员|定义
---|:--:
+:--:|:--:
 key_type|第一个模板参数（Key）
 mapped_type|第二个模板参数（T）
 value_type|pair<const key_type,mapped_type>
@@ -32,7 +32,7 @@ key_equal|第四个模板参数（Pred）
 例如，罗马数字包含以下七种字符: I， V， X， L，C，D 和 M。
 
 字符|数值
---|:--:
+:--:|:--:
 I|1
 V|5
 X|10
