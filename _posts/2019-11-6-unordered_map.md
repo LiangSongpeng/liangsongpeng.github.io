@@ -1,8 +1,6 @@
 ---
 layout: post
 title:  "unordered_map无序表的特性与应用场景"
-categories: Cpp
-tags: 效率
 ---
 
 * content
