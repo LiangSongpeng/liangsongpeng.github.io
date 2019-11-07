@@ -1,21 +1,29 @@
 ---
 layout: post
-title:  "unordered_map 无序表的特性与应用场景"
+title:  "关联容器的特性与应用场景"
 ---
 
 * content
 {:toc}
 
-## std::unordered_map 的特性
+## 无序表 unordered_map
+
+std::unorederd_map 类模板：
+
+```
+template < class Key,                                    // unordered_map::key_type
+           class T,                                      // unordered_map::mapped_type
+           class Hash = hash<Key>,                       // unordered_map::hasher
+           class Pred = equal_to<Key>,                   // unordered_map::key_equal
+           class Alloc = allocator< pair<const Key,T> >  // unordered_map::allocator_type
+           > class unordered_map;
+```
 
 * 关联性：std::unorederd_map 是一个关联容器，其中的元素根据键来引用，而不是根据索引来引用。
 
 * 无序性：在内部，std::unordered_map 中的元素不会根据其键值或映射值按任何特定顺序排序，而是根据其哈希值组织到桶中，以允许通过键值直接快速访问各个元素（常量的平均时间复杂度）。
 
 * 唯一性：std::unorederd_map 中的元素的键是唯一的。
-
-关联容器的特点：元素之间有映射关系，读取、查找效率很高。
-<br/>序列容器有：链表、数组、栈、队列等等（元素一个一个往里放，没关系）。
 
 类型成员|定义
 :--:|:--:
@@ -24,6 +32,21 @@ mapped_type|第二个模板参数（T）
 value_type|pair<const key_type,mapped_type>
 hasher|第三个模板参数（Hash）
 key_equal|第四个模板参数（Pred）
+
+---
+
+## 关联容器
+
+> 容器：顺序容器、关联容器。
+> 
+> 顺序容器：链表、数组、栈、队列等（元素一个一个往里放）。
+> <br/>关联容器：有序容器、无序容器、hash_map。
+> 
+> 有序容器：map、multimap、set、multiset。
+> <br/>无序容器：unorder_map、unorder_multimap、unorder_set、unorder_multiset。
+> <br/>hahs_map。
+
+关联容器的特点：元素之间有映射关系，读取、查找效率很高。
 
 ---
 
@@ -51,9 +74,7 @@ M|1000
 
 给定一个罗马数字，将其转换成整数。输入确保在 1 到 3999 的范围内。
 
-在此问题中，可使用无序表。
-
-代码如下：
+在此问题中，可使用无序表。代码如下：
 
 ```
 int romanToInt(string s) 
@@ -70,4 +91,4 @@ int romanToInt(string s)
 }
 ```
 
-对于这种问题，应该及时想到使用无序表，如哈希表等类型容器。可以将键与值一一对应，查找效率极高！
+对于这种问题，应该及时想到使用关联容器，如哈希表、无序表等类型的容器。可以将键与值一一对应，查找效率极高！
