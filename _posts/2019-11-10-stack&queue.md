@@ -59,9 +59,9 @@ bool isValid(string s)
 {
     if (s.empty()) 
         return true;
-    map<char, char> sMap = {{')', '('},
-                            {'}', '{'},
-                            {']', '['}
+    map<char, char> sMap = { {')', '('},
+                             {'}', '{'},
+                             {']', '['}
                            };
     stack<char> st;
     for (int i = 0; i < s.size(); i++) 
