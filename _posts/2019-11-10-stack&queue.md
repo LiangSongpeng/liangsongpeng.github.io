@@ -8,9 +8,9 @@ title:  "栈的特性与应用场景 & 队列"
 
 ## 栈 stack
 
-栈的定义: stack<int> s;
+栈的定义: stack&lt;int&gt; s;
 
-在栈中应包含头文件: #include<stack> 
+在栈中应包含头文件: #include&lt;stack&gt; 
 
 > 栈：先进后出。
 > <br/>栈：只能在栈顶进行添加或删除。
@@ -33,7 +33,7 @@ s.push();          //将元素压入栈顶
 
 有效字符串需满足：
 
-&nbsp;&nbsp;&nbsp;&nbsp;1、左括号必须用相同类型的右括号闭合。
+<&nbsp;>&nbsp;&nbsp;&nbsp;1、左括号必须用相同类型的右括号闭合。
 &nbsp;&nbsp;&nbsp;&nbsp;<br/>2、左括号必须以正确的顺序闭合。
 
 注意空字符串可被认为是有效字符串。
@@ -76,9 +76,9 @@ bool isValid(string s)
 
 既然都讲了栈了，那就顺带讲讲队列吧。
 
-栈的定义: queue<int> q;
+栈的定义: queue&lt;int&gt; q;
 
-包含头文件: #include<queue>
+包含头文件: #include&lt;queue&gt;
 
 > 队列：先进先出。
 > <br/>队列：在队尾进行添加，在队头进行删除，在队中间不能进行操作。
