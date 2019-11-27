@@ -8,15 +8,13 @@ title:  "SQL Server 基本语法"
 
 ## SQL Server 简介
 
-最近由于所做项目的需求，又重温了一下 SQL Server 数据库的使用，以及 SQL Server 数据库与 MFC 连接的方法。
+由于最近所做项目的需求，又重温了一下 SQL Server 数据库的使用，以及 SQL Server 数据库与 MFC 连接的方法。
 
 SQL Server 是 Microsoft 公司推出的关系型数据库管理系统。具有使用方便可伸缩性好与相关软件集成程度高等优点。Microsoft SQL Server 是一个全面的数据库平台，使用集成的商业智能 (BI) 工具提供了企业级的数据管理。Microsoft SQL Server 数据库引擎为关系型数据和结构化数据提供了更安全可靠的存储功能，可以方便用户构建和管理用于业务的高可用和高性能的数据应用程序。
 
 ---
 
 ## SQL Server 基本语法
-
-下面就简单记录一下 SQL Server 的基本语法吧。
 
 1、创建数据库
 
@@ -94,4 +92,4 @@ SELECT * FROM TABXXX WHERE XX1 = 'xx1_data'  //查询TABXXX表格中的一组数
 
 ---
 
-有关于 SQL Server 的内容实在太多了，一篇根本写不完。所以就先写这些吧，我要去吃饭了。
+有关 SQL Server 的内容实在太多了，一篇根本写不完。所以就先写这些基础的吧，我要去吃饭了。
