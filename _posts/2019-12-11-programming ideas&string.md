@@ -123,52 +123,36 @@ string 常用成员函数：
 > <br/> &#8195;&#8195; str.find("ABC")——查找 "ABC"
 > <br/> &#8195;&#8195; str.find('B',1)——从位置 1 处，查找 'B'
 > <br/> &#8195;&#8195; str.find("ABC",1,2)——从位置 1 处，开始查找 'ABC' 的前 2 个字符
+> <br/> rfind函数：从尾部查找
+> <br/> &#8195;&#8195; str.rfind('A')——查找 'A'
+> <br/> &#8195;&#8195; str.rfind("ABC")——查找 "ABC"
+> <br/> &#8195;&#8195; str.rfind('B',1)——从位置 1 处，向前查找 'B'
+> <br/> &#8195;&#8195; str.rfind("ABC",1,2)——从位置 1 处，开始向前查找 'ABC' 的前 2 个字符
+> <br/> find_first_of() 函数：
+> <br/> 查找是否包含有子串中任何一个字符
+> <br/> &#8195;&#8195; str.find_first_of("abBc")——查找 "abBc" 和 str 相等的任何字符，"abBc" 中有就返回位置
+> <br/> &#8195;&#8195; str.find_first_of("abBc",1)——查找 "abBc" 和 str 相等的任何字符，从位置 1 处，开始查找 "abBc" 中的字符，"abBc" 中有的就返回位置
+> <br/> &#8195;&#8195; str.find_first_of("abBc",1,2)——查找 "abBc" 和 str 相等的任何字符，从位置 1 处，开始查找 "abBc" 的前 2 个字符，"abBc" 中有的就返回位置
+> <br/> find_last_of() 函数：
+> <br/> find_first_not_of() 末尾查找，从末尾处开始，向前查找是否包含有子串中任何一个字符
+> <br/> &#8195;&#8195; str.find_last_of("abBc")——查找 "abBc" 和 str 相等的任何字符，向前查找，"abBc" 中有的返回位置
+> <br/> &#8195;&#8195; str.find_last_of("abBc",1)——查找 "abBc" 和 str 相等的任何字符，从位置 1 处，开始向前查找 "abBc" 中的字符，"abBc" 中有的就返回位置
+> <br/> &#8195;&#8195; str.find_last_of("abBc",10,2)——查找 "abBc" 和 str 相等的任何字符，从位置 10 处，开始向前查找 "abBc" 的前 2 个字符，"abBc" 中有的就返回位置
 
-rfind函数：从尾部查找
+拷贝相关的函数：
 
-str.rfind('A')——查找 'A'
-str.rfind("ABC")——查找 "ABC"
-
-int n=s4.rfind("ABC");   s4：AAAABCD    ->   n = 3
-
-str.rfind('B',1)——从 位置1 处，向前查找'B'
-str.rfind("ABC",1,2)——从 位置1 处，开始向前查找 'ABC' 的前 2个 字符
-
-find_first_of()函数：
-
-查找是否包含有子串中任何一个字符
-
-str.find_first_of("abBc")——查找 "abBc" 和str 相等的任何字符，"abBc" 中有就返回位置
-str.find_first_of("abBc",1)——查找 "abBc" 和str 相等的任何字符，从 位置1 处，开始查找"abBc" 中的字符，"abBc" 中有的就返回位置
-str.find_first_of("abBc",1,2)——查找 "abBc" 和str 相等的任何字符，从 位置1 处，开始查找"abBc" 的前 2个 字符，"abBc" 中有的就返回位置
-
-find_last_of()函数：
-
-find_first_not_of ()末尾查找, 从末尾处开始,向前查找是否包含有子串中任何一个字符
-
-str.find_last_of("abBc")——查找 "abBc" 和str 相等的任何字符，向前查找，"abBc" 中有的返回位置
-str.find_last_of("abBc",1)——查找 "abBc" 和str 相等的任何字符，从 位置1 处，开始向前查找"abBc" 中的字符，"abBc" 中有的就返回位置
-str.find_last_of("abBc",10,2)——查找 "abBc" 和str 相等的任何字符，从 位置10 处，开始向前查找"abBc" 的前 2个 字符，"abBc" 中有的就返回位置
-
-拷贝相关的：
-
-str1=str.substr(2)——提取子串，提取出 str 的 下标为2 到末尾，给 str1
-str1=str.substr(2,3)——提取子串，提取出 str 的 下标为2 开始，提取三个字节，给 str1
-const char* s1=str.data()——将string类转为字符串数组，返回给s1
-
-char* s=new char[10]
-
-str.copy(s,count,pos)——将 str 里的 pos 位置开始，拷贝 count个 字符,存到 s 里
+> &#8195;&#8195; str1=str.substr(2)——提取子串，提取出 str 的下标为 2 到末尾，给 str1
+> <br/> &#8195;&#8195; str1=str.substr(2,3)——提取子串，提取出 str 的下标为 2 开始，提取三个字节，给 str1
+> <br/> &#8195;&#8195; const char* s1=str.data()——将 string 类转为字符串数组，返回给 s1
+> <br/> char* s = new char[10]
+> <br/> &#8195;&#8195; str.copy(s,count,pos)——将 str 里的 pos 位置开始，拷贝 count 个字符,存到 s 里
 
 比较相关的函数：
 
-compare函数：完全相等返回0；完全不等返回小于0；部分相等返回大于0
-
-示例对象：string str(“abcd”)
-
-str.compare(“abcd”)——完全相等，返回0
-str.compare(“dcba”)——返回一个小于0的值
-str.compare(“ab”)——返回大于0的值
-str.compare(str)——相等
-str.compare(0,2,str,2,2)——用str的 下标0 开始的 2个字符 和 str的 下标2 开始的 2个 字符比较——就是用 "ab" 和 "cd”" 比较，结果小于零
-str.compare(1,2,”bcx”,2)——用str的 下标1 开始的 2个字符 和 "bcx"的 前 2个 字符比较——就是用 "bc" 和 "bc”" 比较，结果是零
+> compare函数：完全相等返回 0；完全不等返回小于 0；部分相等返回大于 0
+> <br/> &#8195;&#8195; str.compare(“abcd”)——完全相等，返回 0
+> <br/> &#8195;&#8195; str.compare(“dcba”)——返回一个小于 0 的值
+> <br/> &#8195;&#8195; str.compare(“ab”)——返回大于 0 的值
+> <br/> &#8195;&#8195; str.compare(str)——相等
+> <br/> &#8195;&#8195; str.compare(0,2,str,2,2)——用 str 的下标 0 开始的 2 个字符和 str 的 下标 2 开始的 2 个字符比较——就是用 "ab" 和 "cd" 比较，结果小于零
+> <br/> &#8195;&#8195; str.compare(1,2,”bcx”,2)——用 str 的下标 1 开始的 2 个字符和 "bcx" 的前 2 个字符比较——就是用 "bc" 和 "bc" 比较，结果是零
