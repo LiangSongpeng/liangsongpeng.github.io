@@ -54,23 +54,15 @@ STL：
 
 容器：
 
-    序列式容器（线性结构）
-
-    string：
-
-    array：C11静态顺序表
-
-    vector：动态顺序表
-
-    list：带头节点的双向循环链表
-
-    deque：动态二维数组
-
-    forward_list：带头结点的循环单链表
-
-    stack：栈
-
-    queue：队列
+> 序列式容器（线性结构）
+> <br/> string：
+> <br/> array：C11静态顺序表
+> <br/> vector：动态顺序表
+> <br/> list：带头节点的双向循环链表
+> <br/> deque：动态二维数组
+> <br/> forward_list：带头结点的循环单链表
+> <br/> stack：栈
+> <br/> queue：队列
 
     String类：按照类的方式进行动态管理字符串
 
