@@ -116,7 +116,7 @@ string 常用成员函数：
 
 反转相关函数：
 
-> (位于头文件<algorithm>)
+> (位于头文件&lt;algorithm&gt;)
     > <br/> 
 > <br/> &#8195;&#8195; reverse(str.begin(),str.end())——str 的开始到结束字符反转 
     
