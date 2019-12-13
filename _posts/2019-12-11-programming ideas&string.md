@@ -168,14 +168,10 @@ string 常用成员函数：
 拷贝相关的函数：
 
 > - str1=str.substr(2)——提取子串，提取出 str 的下标为 2 到末尾，给 str1
->
 > - str1=str.substr(2,3)——提取子串，提取出 str 的下标为 2 开始，提取三个字节，给 str1
->
 > - const char* s1=str.data()——将 string 类转为字符串数组，返回给 s1
->
 > - char* s = new char[10]
->
->   str.copy(s,count,pos)——将 str 里的 pos 位置开始，拷贝 count 个字符,存到 s 里
+> <br/> str.copy(s,count,pos)——将 str 里的 pos 位置开始，拷贝 count 个字符,存到 s 里
 
 比较相关的函数：
 
