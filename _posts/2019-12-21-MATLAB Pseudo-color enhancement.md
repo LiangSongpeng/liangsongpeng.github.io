@@ -38,6 +38,8 @@ title:  "MATLAB 实现伪彩色增强"
 
 ![Density segmentation (2019-12-21-MATLAB Pseudo-color enhancement)](D:\000Study\WarehouseForGithub\liangsongpeng.github.io\_posts\Density segmentation (2019-12-21-MATLAB Pseudo-color enhancement).png)
 
+![](D:\000Study\WarehouseForGithub\liangsongpeng.github.io\_posts\Density segmentation (2019-12-21-MATLAB Pseudo-color enhancement).png)
+
 代码实现如下：
 
 ```matlab
