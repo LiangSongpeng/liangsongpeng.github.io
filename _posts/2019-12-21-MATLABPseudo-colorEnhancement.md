@@ -53,9 +53,9 @@ imshow(I);
 title('原图');
 
 G = rgb2gray(I);
-X = grayslice(G, 500);
+X = grayslice(G, 5000);
 figure;
-imshow(X, jet(500));
+imshow(X, jet(5000));
 title('伪彩色增强效果图');
 
 toc;
