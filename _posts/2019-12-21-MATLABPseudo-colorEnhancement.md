@@ -67,7 +67,9 @@ toc;
 
 输出的结果图像：
 
-![](https://raw.githubusercontent.com/LiangSongpeng/liangsongpeng.github.io/master/_images/2019-12-21-Output-2019-12-21-MATLABPseudo-colorEnhancement.png)
+![](https://raw.githubusercontent.com/LiangSongpeng/liangsongpeng.github.io/master/_images/2019-12-21-Output1-2019-12-21-MATLABPseudo-colorEnhancement.png)
+
+![](https://raw.githubusercontent.com/LiangSongpeng/liangsongpeng.github.io/master/_images/2019-12-21-Output2-2019-12-21-MATLABPseudo-colorEnhancement.png)
 
 实际上就是，先选择图像，显示图像，伪彩色增强一下，再显示一下处理后的图像。
 
