@@ -36,7 +36,7 @@ title:  "MATLAB 实现伪彩色增强"
 
 密度分割法的主要原理，可见下图：
 
-![](https://raw.githubusercontent.com/LiangSongpeng/liangsongpeng.github.io/master/_images/DensitySegmentation-2019-12-21-MATLABPseudo-colorEnhancement.png)
+![](https://raw.githubusercontent.com/LiangSongpeng/liangsongpeng.github.io/master/_images/2019-12-21-DensitySegmentation-2019-12-21-MATLABPseudo-colorEnhancement.png)
 
 代码实现如下：
 
@@ -61,7 +61,15 @@ title('伪彩色增强效果图');
 toc;
 ```
 
-实际上就，选择图像，显示图像，伪彩色增强一下，再显示一下处理后的图像。
+输入的原图像：
+
+![](https://raw.githubusercontent.com/LiangSongpeng/liangsongpeng.github.io/master/_images/2019-12-21-Input-2019-12-21-MATLABPseudo-colorEnhancement.png)
+
+输出的结果图像：
+
+![](https://raw.githubusercontent.com/LiangSongpeng/liangsongpeng.github.io/master/_images/2019-12-21-Output-2019-12-21-MATLABPseudo-colorEnhancement.png)
+
+实际上就是，先选择图像，显示图像，伪彩色增强一下，再显示一下处理后的图像。
 
 而 MATLAB 中有很多自带的函数，直接调用就行，编程上能省很多麻烦。
 
