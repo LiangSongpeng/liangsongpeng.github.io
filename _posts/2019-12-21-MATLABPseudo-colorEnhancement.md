@@ -36,7 +36,7 @@ title:  "MATLAB 实现伪彩色增强"
 
 密度分割法的主要原理，可见下图：
 
-![image](_posts/DensitySegmentation-2019-12-21-MATLABPseudo-colorEnhancement.png)
+![image](DensitySegmentation-2019-12-21-MATLABPseudo-colorEnhancement.png)
 
 代码实现如下：
 
