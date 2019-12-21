@@ -53,10 +53,10 @@ imshow(I);
 title('原图');
 
 G = rgb2gray(I);
-X = grayslice(G, 5000);
+X = grayslice(G, 500);
 figure;
-imshow(X, jet(5000));
-title('彩色增强效果图');
+imshow(X, jet(500));
+title('伪彩色增强效果图');
 
 toc;
 ```
