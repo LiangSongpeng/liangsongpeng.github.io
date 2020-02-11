@@ -50,8 +50,8 @@ public:
 		while (m_pHead)  //链表不为空
 		{
 			pDel = m_pHead; //标记要删除的节点
-            //将链表头地址变为链表头后的一个地址      
-            //因为pNext是链表内的参数，不能直接调用，所以要通过链表的指针来调用
+                                        //将链表头地址变为链表头后的一个地址      
+                                        //因为pNext是链表内的参数，不能直接调用，所以要通过链表的指针来调用
 			m_pHead = m_pHead->pNext;   
 			delete pDel;   //删除标记   //删除此指针所指地址的内容
 			pDel = 0;
@@ -90,8 +90,8 @@ public:
 			m_nSize = 0;
 		}
 		else //删除链表节点，最好从头开始删。
-             //因为从头开始可以依次往下读到下一节点的地址，但无法从尾开始依次读到上一节点的地址
-             //所以此处若要删除一个节点，则会选择删除链表头的节点
+                     //因为从头开始可以依次往下读到下一节点的地址，但无法从尾开始依次读到上一节点的地址
+                     //所以此处若要删除一个节点，则会选择删除链表头的节点
 		{         
 			Node* pDel = m_pHead;          
 			m_pHead = m_pHead->pNext;
@@ -156,7 +156,7 @@ void Push(int nV, int num)
 		{
 			Node* node = new Node;     //要插入的节点 
 			node->nValue = nV;
-            node->pNext = 0;
+            		node->pNext = 0;
 			m_pEnd->pNext = node;
 			m_pEnd = node;
 			m_nSize++;
@@ -165,7 +165,7 @@ void Push(int nV, int num)
 		{
 			Node* node = new Node;     //要插入的节点 
 			node->nValue = nV;
-            node->pNext = node_flag->pNext;
+            		node->pNext = node_flag->pNext;
 			node_flag->pNext = node;
 			m_nSize++;
 		}
