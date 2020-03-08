@@ -32,7 +32,6 @@ Singleton 模式可能是设计模式中最简单的一个模式，也就是如�
 
 ```c++
 #include <iostream>
-#include <string>
 using namespace std;
 
 class CPerson   
