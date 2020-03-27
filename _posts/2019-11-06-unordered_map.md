@@ -25,6 +25,8 @@ template < class Key,                                    // unordered_map::key_t
 
 * 唯一性：std::unorederd_map 中的元素的键是唯一的。
 
+<!-- more --> <!-- 摘要预览与正文的分隔符 -->
+
 类型成员|定义
 :--:|:--:
 key_type|第一个模板参数（Key）
