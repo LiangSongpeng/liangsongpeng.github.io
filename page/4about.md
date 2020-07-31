@@ -21,5 +21,4 @@ type: page
 
 ## 联系我
 
-* email：liangsongpeng@outlook.com
 * GitHub：LiangSongpeng
